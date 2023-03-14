@@ -14,7 +14,7 @@ import { themeContext } from '../../Context'
 import { useContext } from 'react'
 import { motion } from 'framer-motion'
 
-const intro = () => {
+const Intro = () => {
 
     // Animation variable add motion 
     const transition = { duration: 2, type: 'spring' }
@@ -37,15 +37,15 @@ const intro = () => {
                 </div>
                 <button className="button i-button">Hire me</button>
                 <div className="i-icons">
-                    <a href="#" target="_blank" rel="kkk">
+                    <a href="javascript:void(0)" target="_blank" rel="kkk">
                         <img src={Github} alt="Github Icon" />
                     </a>
 
-                    <a href="#" target="_blank" rel="asa">
+                    <a href="javascript:void(0)" target="_blank" rel="asa">
                         <img src={LinkedIn} alt="LinkedIn Icon" />
                     </a>
 
-                    <a href="#" target="_blank" rel="vcx">
+                    <a href="javascript:void(0)" target="_blank" rel="vcx">
                         <img src={Instagram} alt="Instagram Icon" />
                     </a>
                 </div>
@@ -67,14 +67,18 @@ const intro = () => {
                     initial={{ top: '-4%', left: '74%' }}
                     whileInView={{ left: '68%' }}
                     transition={transition}
-                    style={{ top: '-4%', left: '68%', color: 'black' }}>
+                    style={{ top: '-4%', left: '68%', color: 'black' }}
+                    className='floating-div' 
+                    >
                     <FloatingDiv image={Crown} txt1='Web' txt2='Developer' />
                 </motion.div>
                 <motion.div
                     initial={{ left: '9rem', top: '18rem' }}
                     whileInView={{ left: '0rem' }}
                     transition={transition}
-                    style={{ top: '18rem', left: '0rem', color: 'black' }}>
+                    style={{ top: '18rem', left: '0rem', color: 'black' }}
+                    className='floating-div' 
+                    >
                     <FloatingDiv image={thumbup} txt1='Best Design' txt2='Award' />
                 </motion.div>
                 {/* *Blur Div */}
@@ -92,4 +96,4 @@ const intro = () => {
     )
 }
 
-export default intro
+export default Intro

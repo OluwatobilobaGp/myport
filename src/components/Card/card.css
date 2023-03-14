@@ -34,3 +34,9 @@
      font-size: 16px;
      color: var(--kakki);
 }
+
+@media screen and (max-width: 4780px) {
+    .card{
+       width: auto;  
+    }
+}

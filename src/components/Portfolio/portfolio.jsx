@@ -10,11 +10,11 @@ import { themeContext } from '../../Context'
 import { useContext } from 'react'
 
 
-const portfolio = () => {
+const Portfolio = () => {
   const theme = useContext (themeContext);
   const darkMode = theme.state.darkMode;
 return (
-    <div className="portfolio">
+    <div className="portfolio" id='Porfolio'>
       {/* heading */}
       <span style={{color: darkMode? 'white': ''}}> Recent Projects </span>
       <span> Porfolio </span>
@@ -43,4 +43,4 @@ return (
   )
 }
 
-export default portfolio
+export default Portfolio

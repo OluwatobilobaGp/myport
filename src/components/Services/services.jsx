@@ -11,7 +11,7 @@ import { useContext } from 'react'
 import { motion } from 'framer-motion'
 
 
-const services = () => {
+const Services = () => {
 
     // Animation variable
     const transition = { duration: 2, type: 'spring' }
@@ -22,7 +22,7 @@ const services = () => {
 
 
     return (
-        <div className='services'>
+        <div className='services' id='Services'>
 
             {/* * Left side */}
             <div className="awesome">
@@ -61,7 +61,7 @@ const services = () => {
                     <Card
                         emoji={Glasses}
                         heading={'Developer'}
-                        details={"Html, Css, JavaScript, React"}
+                        details={"Html, Css, JavaScript, React, PHP (Laravel)"}
                     />
                 </motion.div>
 
@@ -83,4 +83,4 @@ const services = () => {
     )
 }
 
-export default services
+export default Services
